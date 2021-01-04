@@ -64,10 +64,6 @@
   3.  웹팩 : 코드 수정할 때마다 웹 브라우저 리로딩.
 - 패키지 매니저 도구
   - npm, yarn
-  - react-app 생성 (yarm 이용)
-  ```
-      yarn add react-app "프로젝트 이름"
-  ```
 
 ## 2. 에디터 설정
 
@@ -75,3 +71,13 @@
   1.  ESLint : 자바스크립트 문법, 코드 스타일 검사.
   2.  Reactjs Code Snippers : 단축 단어 자동 생성.
   3.  Prettier-Code formatter : 코드 스타일 자동 정리
+
+## 3. CRA 도구( create react-app)
+
+- 리액트 프로젝트에 필요한 웹팩, 바벨 환경을 간편하게 구축 해주는 도구
+- react-app 생성 (yarm 이용)
+
+```
+    yarn add react-app "프로젝트 이름"
+    npm install react-app "프로젝트 이름"
+```
