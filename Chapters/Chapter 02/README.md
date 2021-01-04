@@ -163,9 +163,9 @@
   import './App.css';
   import logo from './logo.svg';
   ```
-- 웹팩의 로더 기능
+- 웹팩의 로더 기능 - CRA가 알아서 설정
   1.  file-loader : SVG, CSS 파일 불러오기
-  2.  babel-loader : js 파일 불러오면서 ES5로 변환 - CRA가 알아서 설정
+  2.  babel-loader : js 파일 불러오면서 ES5로 변환
 
 ## 2. 컴포넌트 만들기
 
