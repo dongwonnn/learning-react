@@ -4,7 +4,7 @@
 
 ## hello-react
 
-- [Chapter_01\_리액트\_시작](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2001)
+- ✔[Chapter_01\_리액트\_시작](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2001)
 - [Chapter_02_JSX](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2002)
 - [Chapter_03\_컴포넌트](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2003)
 - [Chapter_04\_이벤트\_핸들링](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2004)
