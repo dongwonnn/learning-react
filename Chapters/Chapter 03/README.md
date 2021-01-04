@@ -52,7 +52,7 @@ export default App;
 
 - ES6의 화살표 함수
   - 함수를 표현하는 새로운 방식
-  - 주로 함수를 파라미터로 전달할 때 유용
+  - 주로 **함수를 파라미터로 전달할 때** 유용
   - this 비교
     1. function : 자신이 종속된 객체의 this를 가리킴
     2. 화살표 함수 : 자신이 종속된 인스턴스의 this를 가리킴
@@ -98,7 +98,7 @@ const MyComponent = (props) =>{
 
 - props 값을 지정하지 않았을 때 보여줄 기본값.
 - 자식 컴포넌트 함수 밑에 설정
-- MyComponent.defaultProps = { props 이름 : defalut 값}
+- **MyComponent.defaultProps = { props 이름 : defalut 값}**
 
 ```
 const MyComponent = (props) => {
@@ -184,9 +184,9 @@ render(){
 
 # 🎯 state
 
-- 컴포넌트 내부에서 바뀔 수 있는 값.
-- 클래스형 컴포넌트의 state
-- 함수형 컴포넌트의 useState (Hooks)
+- **컴포넌트 내부에서 바뀔 수 있는 값**.
+- 클래스형 컴포넌트의 **state**
+- 함수형 컴포넌트의 **useState** (Hooks)
 
 ### cf) props
 
@@ -218,7 +218,7 @@ constructor(props){
 ### this.setState를 이용하여 객체로 값 설정
 
 - state의 값을 바꿀 땐 주로 이벤트 시스템을 이용
-  [Chapter_04\_이벤트\_핸들링](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2004)
+- [Chapter_04\_이벤트\_핸들링](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2004)
 
 ```
 <button onClick = {()=> {
@@ -239,7 +239,7 @@ state = {
 
 ### setState 안에 객체 대신 함수 인자 전달
 
-- this.setState는 비동기적으로 업데이트 된다.
+- this.setState는 **비동기적**으로 업데이트 된다.
 - 따라서 같은 state를 두 번 연속으로 호출하면 뒤의 state가 적용 안됨.
 - 해결하기 위해 함수 인자를 전달하기
 - `prevState` : 기존상태 `props` : 현재 지니고 있는 props. 안쓴다면 생략가능
@@ -269,7 +269,7 @@ this.setState({
 
 ## 2. 함수형 컨포넌트에서 useState 사용하기
 
-- 배열 비구조화 할당 문법
+- **배열 비구조화 할당 문법**
 
 ```
 const array = [1,2];
@@ -303,10 +303,10 @@ const [one, two] = array;
 
 # 🎯 state를 사용할 때 주의사항
 
-- state 값을 바꿀 때 세터 함수를 사용해야 한다. 직접적으로 바꾸면 안됨.
-- 배열이나 객체를 업데이트 하는 과정
-  1. 배열, 객체 사본을 만든다. ( spread 연산자 )
-  2. 사본에 값을 업데이트 한 후 사본의 상태를 setState, 세터 함수를 이용해 업데이트 ( 배열의 내장함수들. map, filter ..)
+- state 값을 바꿀 때 **세터 함수**를 사용해야 한다. 직접적으로 바꾸면 안됨.
+- **배열이나 객체를 업데이트 하는 과정**
+  1. **배열, 객체 사본을 만든다. ( spread 연산자 )**
+  2. **사본에 값을 업데이트 한 후 사본의 상태를 setState, 세터 함수를 이용해 업데이트 ( 배열의 내장함수들. map, filter ..)**
   ```
   const array = [
       {id : 1, value : true},
