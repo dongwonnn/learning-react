@@ -52,9 +52,13 @@
      2. 번들링 : 모듈화된 코드를 한 파일로 합치는 과정.
      3. 웹팩 : 코드 수정할 때마다 웹 브라우저 리로딩.
    - 패키지 매니저 도구
-     - npm 2. yarn
+     - npm, yarn
+     - react-app 생성 (yarm 이용)
+       ```
+           yarn add react-app "프로젝트 이름"
+       ```
 2. 에디터 설정
-   - VSCode 사용
+   - VSCode market 에서 설치
      1. ESLint : 자바스크립트 문법, 코드 스타일 검사.
      2. Reactjs Code Snippers : 단축 단어 자동 생성.
      3. Prettier-Code formatter : 코드 스타일 자동 정리
