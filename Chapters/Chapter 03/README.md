@@ -307,7 +307,8 @@ const [one, two] = array;
 - **배열이나 객체를 업데이트 하는 과정**
   1. **배열, 객체 사본을 만든다. ( spread 연산자 )**
   2. **사본에 값을 업데이트 한 후 사본의 상태를 setState, 세터 함수를 이용해 업데이트 ( 배열의 내장함수들. map, filter ..)**
-  ```
+
+```
   const array = [
       {id : 1, value : true},
       {id : 2, value : false},
@@ -317,4 +318,4 @@ const [one, two] = array;
     nextArray.filter(item => item.id !== 2)     // id가 2인 객체 제거
     nextArray.map(item => item.id === 1 ? {...item, value:false})
     // id가 1인 객체 값을 false로 변경
-  ```
+```
