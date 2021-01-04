@@ -52,12 +52,12 @@
 3. if문 대신 조건부 연산자
    - if문을 사용할 수 없기 때문에 **삼항연산자** 사용
      ```
-     cosnt name = '리액트';
-     return (
-         <div>
-             {name==='리액트'} ? (<h1> TRUE </h1>) : (<h1> FALSE </h1>)
-        </div>
-     )
+        cosnt name = '리액트';
+        return (
+            <div>
+                {name==='리액트'} ? (<h1> TRUE </h1>) : (<h1> FALSE </h1>)
+            </div>
+        )
      ```
 4. **&& 연산자를 사용한 조건부 렌더링**
    - 특정 조건을 만족할 때만 내용을 보여주고 싶을 때.
@@ -68,7 +68,7 @@
 5. undefined 렌더링하지 않기
 
    - undefined는 렌더링 되지 않고 오류 발생
-   - 방지 하기 위해 OR(||) 사용한다.
+   - 방지 하기 위해 **OR(||)** 사용한다.
      ```
          const name = undefined;
          return name || '값이 undefined 입니다.'
@@ -78,7 +78,7 @@
 
    - 함수 안에 객체를 이용해 스타일 속성들을 미리 정의할 수 있다.
    - 이 객체를 태그 요소 style 안에 적용 가능하다.
-   - 스타일 속성중 하이푼(-)으로 표현되는 속성은 -을 없애고 카멜 표기법으로 작성해아 한다.
+   - 스타일 속성중 하이푼(-)으로 표현되는 속성은 -을 없애고 **카멜 표기법**으로 작성해아 한다.
 
      ```
          // 스타일 미리 적용
@@ -90,7 +90,7 @@
      ```
 
 7. class 대신 className
-   - CSS, JS 에서 클래스를 사용할 때 일반적인 class 대신 className을 사용한다.
+   - CSS, JS 에서 클래스를 사용할 때 일반적인 class 대신 **className**을 사용한다.
      ```
          return <div className="react">{name}</div>
      ```
@@ -114,7 +114,7 @@
 2. Prettier
    - 코드 스타일 자동 정리 도구
    - setting
-     - 프로젝트 최상위 디렉토리에 .prettierrc 파일 생성
+     - 프로젝트 최상위 디렉토리에 **.prettierrc** 파일 생성
        ```
            {
                "singleQuoto" : true, // 싱글 쿼테이션 사용 여부
@@ -130,7 +130,7 @@
 
 1. 모듈 불러오기
 
-   - 웹팩(번들러) 으로 묶인 파일들을 불러오기
+   - **웹팩(번들러)** 으로 묶인 파일들을 불러오기
      ```
      import React from 'react';
      import './App.css';
@@ -147,7 +147,7 @@
      ```
      function App() {
      return (
-     <div className="App">
+         <div className="App">
          <header className="App-header">
              <img src={logo} className="App-logo" alt="logo" />
              <p>
