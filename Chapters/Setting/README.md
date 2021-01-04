@@ -1,4 +1,4 @@
-# React Setting 모음
+# React
 
 ## 프로젝트 생성
 
