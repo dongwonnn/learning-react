@@ -10,7 +10,7 @@
 
 ## ✔ [Chapter_03\_컴포넌트](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2003)
 
-## [Chapter_04\_이벤트\_핸들링](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2004)
+## ✔ [Chapter_04\_이벤트\_핸들링](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2004)
 
 ## [Chapter_05_ref:\_DOM에\_이름\_달기](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2005)
 

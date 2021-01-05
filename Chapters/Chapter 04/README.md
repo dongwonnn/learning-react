@@ -38,7 +38,7 @@
 
 ## 1. 컴포넌트 세팅
 
-- 전체 코드 링크-링크 달기
+- 전체 코드 링크(https://github.com/dongwonnn/learning-react/blob/main/hello-react/src/EventPractice.js)
 
 ```
 <자식 컴포넌트>
@@ -135,7 +135,7 @@ const EventPractice = () => {
 
 ## 4. 임의 메서드 만들기
 
-- 태그 안의 이벤트를 return 밖 메서드로 만들기
+- 태그 안의 이벤트를 **return 밖 메서드**로 만들기
 - 성능은 비슷하지만 가독성 높아짐
 
 ```
@@ -162,8 +162,8 @@ const EventPractice = () => {
 ## 4. input 여러 개 다루기
 
 - input이 두개 밖에 업다면 useState()의 두번 째 인자 상태 설정 함수를 2개 써도 상관없음.
-- 하지만 input이 여러 개라면 e.target.name 이용하여 하나의 함수로 설정
-- 각각의 input 상태를 하나로 관리하기위해 form 객체 설정
+- 하지만 input이 여러 개라면 **e.target.name** 이용하여 하나의 함수로 설정
+- 각각의 input 상태를 하나로 관리하기위해 **form 객체** 설정
 
 ```
 const [form, setForm] = useState({
@@ -179,8 +179,8 @@ const {message, username} = form;
 ```
 
 - 하나로 관리할 onChange 함수
-- e.target.name에 각각 input에서 설정한 name 값이 들어가게 됨.
-- e.target.value는 각각 input에서 입력한 input value
+- **e.target.name에 각각 input에서 설정한 name 값**이 들어가게 됨.
+- **e.target.value는 각각 input에서 입력한 input value**
 
 ```
 <불변성 유지 -> Chapter 12>
