@@ -16,7 +16,7 @@
 
 ## ✔ [Chapter_06\_컴포넌트\_반복](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2006)
 
-## [Chapter_07\_컴포넌트의\_라이프사이클\_메서드](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2007)
+## ✔ [Chapter_07\_컴포넌트의\_라이프사이클\_메서드](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2007)
 
 # hooks-tutorial
 
