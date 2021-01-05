@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .success {
+            background-color: green;
+        }
+
+        .failure {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="password" id="password">
+    <button onClick="validate()">Validate</button>
+</body>
+<script>
+    function validate() {
+        var input = document.getElementById('password')
+        input.className = '';
+        if (input.value === '0000') {
+            input.className = "success"
+        } else {
+            input.className = "failure"
+        }
+        console.log(input.className)
+    }
+</script>
+
+</html>

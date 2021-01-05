@@ -12,9 +12,9 @@
 
 ## ✔ [Chapter_04\_이벤트\_핸들링](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2004)
 
-## [Chapter_05_ref:\_DOM에\_이름\_달기](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2005)
+## ✔ [Chapter_05_ref:\_DOM에\_이름\_달기](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2005)
 
-## [Chapter_06\_컴포넌트\_반복](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2006)
+## ✔ [Chapter_06\_컴포넌트\_반복](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2006)
 
 ## [Chapter_07\_컴포넌트의\_라이프사이클\_메서드](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2007)
 

@@ -1,4 +1,4 @@
-#### _ 책에는 클래스형 컴포넌트 위주로 설명되어서 함수형 컴포넌트로 다시 정리_
+## _ 책에는 클래스형 컴포넌트 위주로 설명되어서 함수형 컴포넌트로 다시 정리_
 
 # Chapter 04 : 이벤트 핸들링
 
@@ -16,7 +16,7 @@
    - 렌더링 부분 외부에 미리 만들어서 전달 가능
 3. DOM 요소에만 이벤트를 설정할 수 있다.
    - html 태그 같은 DOM요소에만 설정 가능
-   - 컴포넌트에는 설정이 안된다.
+   - **컴포넌트에는 설정이 안된다**.
 
 ```
 <HTML>
@@ -159,7 +159,7 @@ const EventPractice = () => {
   }
 ```
 
-## 4. input 여러 개 다루기
+## 5. input 여러 개 다루기
 
 - input이 두개 밖에 업다면 useState()의 두번 째 인자 상태 설정 함수를 2개 써도 상관없음.
 - 하지만 input이 여러 개라면 **e.target.name** 이용하여 하나의 함수로 설정
@@ -181,6 +181,7 @@ const {message, username} = form;
 - 하나로 관리할 onChange 함수
 - **e.target.name에 각각 input에서 설정한 name 값**이 들어가게 됨.
 - **e.target.value는 각각 input에서 입력한 input value**
+- 객체 안에서 key를 []로 감싸면 그 안에 넣은 레퍼런스가 가리키는 실제 값이 key로 사용된다.
 
 ```
 <불변성 유지 -> Chapter 12>
@@ -201,17 +202,17 @@ const onClick = () =>{
 
 ```
 
-- 함수 재설정
+- **name은 꼭 큰 따옴표로 설정**, 함수 재설정
 
 ```
 <input
     ...
-    name={message}
+    name="message"
     onChange = {onChange}
 />
 <input
     ...
-    name={username}
+    name="username"
     onChange = {onChange}
 />
 ```
@@ -220,7 +221,7 @@ const onClick = () =>{
   - 하나의 onChange 함수로 2개의 input 관리가 가능
   - e.target.name을 안쓴다면 각각의 input 개수에 맞는 useState, 상태 설정 함수를 작성해야함.
 
-## 5. onKeyPress 이벤트
+## 6. onKeyPress 이벤트
 
 - 키를 눌렀을 때 발생하는 KeyPress 이벤트 처리
 - e.key 가 Enter인 이벤트에 onClick() 함수 호출하도록 처리
