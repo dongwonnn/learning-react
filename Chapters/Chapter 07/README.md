@@ -40,19 +40,55 @@
 
 # 🎯 라이프사이클 9 메서드 살펴보기
 
-1. render : 컴포넌트 모양새 정의
-2. constructor : 생성자 메서드. 초기 state 설정
-3. getDerivedStateFromProps : props에서 받아 온 값 state에서 동기화
-   - nextProps, prevState 인자 2개 사용. 안에 조건문을 통해 동기화 할지 결정
-4. componentDidMount : 첫 렌더링을 다 마친 후. 다른 JS파일, 라이브러리, 프레임워크의 함수 호출 등 비동기 작업 수행
-5. **shouldComponentUpdate**: props나 state 변경 되었을 때 리렌더링을 할지 안할지 결정
-   - 현재 props, state => this.props, this.state
-   - 새로 설정될 props, state => nextProps, nextState
-   - **업데이트 성능을 개선할 때**
-6. getSnapshotBeforeUpdate : render에서 만들어진 결과물이 브라우저에 실제로 반영되기 직전에 호출
-   - 이 메서드의 반환값은 componentDidUpdate 메서드의 세번째 인자인 snapshot 전달 ( 스크롤바 위치같은 것 참고할 때)
-7. componentDidUpdate : 리렌더링을 완료한 후
-   - prevPorps, prevState를 이용해 리렌더링 이전의 snapshot 값 전달 받음
-8. componentWillUnmount : 컴포넌트에서 DOM을 제거할 때 실행.
-   - componentDidMount에서 등록한 이벤트, 직접 생성한 DOM 등등.. 여기서 제거
-9. componentDidCatch: 에러 발생시 오류 UI 출력
+## 1. render
+
+- 컴포넌트 모양새 정의
+
+## 2. constructor
+
+- 생성자 메서드. 초기 state 설정
+
+## 3. getDerivedStateFromProps
+
+- props에서 받아 온 값 state에서 동기화
+- nextProps, prevState 인자 2개 사용. 안에 조건문을 통해 동기화 할지 결정
+
+## 4. componentDidMount
+
+- 첫 렌더링을 다 마친 후. 다른 JS파일, 라이브러리, 프레임워크의 함수 호출 등 비동기 작업 수행
+
+## 5. **shouldComponentUpdate**
+
+- props나 state 변경 되었을 때 리렌더링을 할지 안할지 결정
+- 현재 props, state => this.props, this.state
+- 새로 설정될 props, state => nextProps, nextState
+- **업데이트 성능을 개선할 때**
+
+## 6. getSnapshotBeforeUpdate
+
+- render에서 만들어진 결과물이 브라우저에 실제로 반영되기 직전에 호출
+- 이 메서드의 반환값은 componentDidUpdate 메서드의 세번째 인자인 snapshot 전달 ( 스크롤바 위치같은 것 참고할 때)
+
+## 7. componentDidUpdate
+
+- 리렌더링을 완료한 후
+- prevPorps, prevState를 이용해 리렌더링 이전의 snapshot 값 전달 받음
+
+## 8. componentWillUnmount
+
+- 컴포넌트에서 DOM을 제거할 때 실행.
+- componentDidMount에서 등록한 이벤트, 직접 생성한 DOM 등등.. 여기서 제거
+
+## 9. componentDidCatch
+
+- 에러 발생시 오류 UI 출력
+
+# 🎯 Hooks와 연동
+
+## 1. useEffect
+
+- componentDidMount, componentDidUpdate 메서드 관리
+
+## 2. useEffet의 뒷정리 함수
+
+- componentWillUnmount, getSnapshotBeforeUpdate 메서드 관리

@@ -20,7 +20,7 @@
 
 # hooks-tutorial
 
-## [Chapter_08_Hooks](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2008)
+## ✔ [Chapter_08_Hooks](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2008)
 
 # styling-react
 
