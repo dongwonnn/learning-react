@@ -1,4 +1,4 @@
-## _7장과 연관지으면서. 개념 뒤로 갈수록 중요함_
+## _7장과 연관 지으면서. 개념 뒤로 갈수록 중요함_
 
 # Chapter 08 : Hooks (1)
 
@@ -11,8 +11,8 @@
 # 🎯 useEffect
 
 - 리액트 컴포넌트가 렌더링될 때마다 특정 작업을 수행
-- 마운트 될 때 componentDidMount
-- 업데이트 될 때 componentDidUpdate
+- **마운트 될 때 componentDidMount**
+- **업데이트 될 때 componentDidUpdate**
 
 ## 1. 마운트될 때, 업데이트될 때두개를 합친 useEffect Hook
 
@@ -39,20 +39,20 @@
       setNickname(e.target.value);
   };
 
-  return (
-      <div>
-      <div>
-          <input placeholder="이름" onChange={onChangeName} />
-          <input placeholder="닉네임" onChange={onChangeNickName} />
-      </div>
-      <div>
-          <b>이름 : {name}</b>
-      </div>
-      <div>
-          <b>닉네임 : {nickname}</b>
-      </div>
-      </div>
-  );
+    return (
+        <div>
+        <div>
+            <input placeholder="이름" onChange={onChangeName} />
+            <input placeholder="닉네임" onChange={onChangeNickName} />
+        </div>
+        <div>
+            <b>이름 : {name}</b>
+        </div>
+        <div>
+            <b>닉네임 : {nickname}</b>
+        </div>
+        </div>
+    );
   };
 
   export default Info;
@@ -61,7 +61,7 @@
 
 ## 2. 마운트(componentDidMount)될 때만 쓰는 useEffect Hook
 
-- useEffect 함수의 두 번째 파라미터로 비어 있는 배열 넣는다.
+- useEffect 함수의 두 번째 파라미터로 **비어 있는 배열** 넣는다.
 - console.log에 처음 렌더링할 때만 console이 찍히고 input 변경 시에는 안찍힘
 
   ```
@@ -75,7 +75,7 @@
 
 ## 3. 특정값이 업데이트될 때만 실행하는 useEffect
 
-- useEffect 함수의 두 번째 파라미터에 업데이트될 때 검사하고 싶은 값을 넣는다.
+- useEffect 함수의 두 번째 파라미터에 업데이트될 때 **검사하고 싶은 값**을 넣는다.
 - name을 설정하면 name input이 바뀔때만 콘솔 찍힘. nickname input 바뀌어도 콘솔 안찍힘
 - 관리하는 state외에 전달받은 props를 넣어도 된다.
   ```
@@ -89,7 +89,7 @@
 
 ## 4. 뒷정리함수
 
-- 언마운트되기 전 (componentWillUnmount), 업데이트하기 직전(getSnapshotBeforeUpdate)에 작업 수행 하기위해 뒷정리 함수 반환
+- **언마운트되기 전 (componentWillUnmount)**, **업데이트하기 직전(getSnapshotBeforeUpdate)**에 작업 수행 하기위해 뒷정리 함수 반환
 
 - 언마운트, 업데이트를 하기위해 부모 컴포넌트 가시성 추가
 
@@ -101,13 +101,13 @@
       setVisible(!visible);
   };
 
-  return (
-      <div>
-      <button onClick={onClick}>{visible ? '보이기' : '숨기기'}</button>
-      <hr />
-      {visible && <Info />}
-      </div>
-  );
+    return (
+        <div>
+        <button onClick={onClick}>{visible ? '보이기' : '숨기기'}</button>
+        <hr />
+        {visible && <Info />}
+        </div>
+    );
   };
   ```
 
@@ -127,10 +127,10 @@
   }, [name]);
   ```
 
-  - 일반 상황 1 : 마운트되어서 Info 컴포넌트가 보일 때
-  - 일반 상황 2 : 정보가 업데이트될 때. (useEffect 두 번째 인자에 따라 다름)
-  - 뒷정리 함수 1 : 언마운트 되어서 숨기려할 때
-  - 뒷정리 함수 2 : 업데이트 되기 직전에. 즉 input에 값 입력해도 업데이트 직전인 상황나옴. 리액트 -> 리액ㅌ'. (useEffect 두 번째 인자에 따라 다름)
+  - **일반 상황 1 : 마운트되어서 Info 컴포넌트가 보일 때**
+  - **일반 상황 2 : 정보가 업데이트될 때. (useEffect 두 번째 인자에 따라 다름)**
+  - **뒷정리 함수 1 : 언마운트 되어서 숨기려할 때**
+  - **뒷정리 함수 2 : 업데이트 되기 직전에. 즉 input에 값 입력해도 업데이트 직전인 상황나옴. 리액트 -> 리액ㅌ'. (useEffect 두 번째 인자에 따라 다름)**
 
 # 🎯 useReducer
 
@@ -250,4 +250,4 @@ function reducer(state, action) {
   };
   ```
 
-  - name, value 값 설정 후, e.target 자체를 dispatch의 타입으로 전달
+  - name, value 값 설정 후, **e.target 자체를 dispatch**의 타입으로 전달
