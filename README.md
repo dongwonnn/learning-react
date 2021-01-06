@@ -26,7 +26,7 @@
 
 # styling-react
 
-## [Chapter_09\_컴포넌트\_스타일링](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2009)
+## ✔ [Chapter_09\_컴포넌트\_스타일링](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2009)
 
 # todo-app
 
