@@ -1,0 +1,47 @@
+.TodoListItem {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  &:nth-child(even) {
+    background: rgb(234, 233, 255);
+  }
+
+  .checkbox {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    svg {
+      font-size: 1.5rem;
+    }
+    .text {
+      flex: 1;
+      margin-left: 1.5rem;
+    }
+
+    &.checked {
+      svg {
+        color: #22b8cf;
+      }
+      .text {
+        color: #adb5bd;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .remove {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    cursor: pointer;
+    &:hover {
+      color: #ff8787;
+    }
+  }
+
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+}

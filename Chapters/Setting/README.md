@@ -56,3 +56,21 @@
 - 자바스크립트 파일안에 스타일 선언하기 ( CSS-in-JS )
 - 라이브러리 중 Styled-components
 - 설치 yarn add styled-components
+
+## 프로젝트 및 라이브러리 설치
+
+- yarr create react-app todo-app
+- yarn add node-sass classnames react-icons
+- react-icons : SVG 형태 아이콘 쉽게 사용
+
+## 자동 import 되게 하기
+
+- jsconfig.json에 아래 코드 작성
+
+  ```
+  {
+      "compilerOptions": {
+          "target": "es6"
+      }
+  }
+  ```
