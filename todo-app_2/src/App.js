@@ -1,23 +1,23 @@
 import React, { useCallback, useRef, useState } from 'react';
-import TodoInsert from './components/TodoInsert';
-import TodoList from './components/TodoList';
-import TodoTemplate from './components/TodoTemplate';
+import TodoInsert from './Components/TodoInsert';
+import TodoList from './Components/TodoList';
+import TodoTemplate from './Components/TodoTemplate';
 
 const App = () => {
   const [todos, setTodos] = useState([
     {
-      id: 1,
-      text: '리액트의 기초 알아보기',
+      id: '1',
+      text: '리액트 기초를 배우자',
       checked: true,
     },
     {
-      id: 2,
-      text: '리덕스에 대해 알아보기',
+      id: '2',
+      text: '3번째 안보고 하기',
       checked: false,
     },
     {
-      id: 3,
-      text: '훅에 대해 알아보기',
+      id: '3',
+      text: '최적화 해보기',
       checked: true,
     },
   ]);
@@ -26,13 +26,13 @@ const App = () => {
 
   const onInsert = useCallback(
     (text) => {
-      const todo = {
+      const nextTodo = {
         id: nextId.current,
         text,
         checked: false,
       };
 
-      setTodos([...todos, todo]);
+      setTodos([...todos, nextTodo]);
       nextId.current += 1;
     },
     [todos],
@@ -40,7 +40,11 @@ const App = () => {
 
   const onRemove = useCallback(
     (id) => {
-      setTodos(todos.filter((todo) => todo.id !== id));
+      setTodos(
+        todos.filter((todo) => {
+          return todo.id !== id;
+        }),
+      );
     },
     [todos],
   );
