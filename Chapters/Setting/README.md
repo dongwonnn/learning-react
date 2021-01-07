@@ -74,3 +74,12 @@
       }
   }
   ```
+
+## react-virtualized를 사용한 렌더링 최적화
+
+- react-virtualized
+
+  - 스크롤되기 전에 보이지 않는 컴포넌트들 렌더링하지 않고 크기만 차지하게끔 한다.
+  - 스크롤되면 해당 스크롤 위치에서 보여 주어야 할 컴포넌트 자연스럽게 렌더링
+
+- 설치 : yarn add react-virtualized

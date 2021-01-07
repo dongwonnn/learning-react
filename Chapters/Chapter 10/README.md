@@ -80,7 +80,7 @@
 
 # 🎯 기능 구현
 
-- 코드(https://github.com/dongwonnn/learning-react/tree/main/todo-app_2/src/componentsFunction)
+- 코드(https://github.com/dongwonnn/learning-react/tree/main/todo-app_2/src/components)
 
 ## 최상위 컴포넌트 App.js에서 전역으로 쓸 함수 생성, 함수들은 useCallback으로 재사용
 

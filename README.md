@@ -32,7 +32,7 @@
 
 ## ✔ [Chapter_10\_일정\_관리\_웹\_어플리케이션\_만들기](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2010)
 
-## [Chapter_11\_컴포넌트\_성능\_최적화](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2011)
+## ✔ [Chapter_11\_컴포넌트\_성능\_최적화](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2011)
 
 # immer-tutorial
 
