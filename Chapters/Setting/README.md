@@ -83,3 +83,7 @@
   - 스크롤되면 해당 스크롤 위치에서 보여 주어야 할 컴포넌트 자연스럽게 렌더링
 
 - 설치 : yarn add react-virtualized
+
+## immer 라이브러리
+
+- 설치 : yarn add immer

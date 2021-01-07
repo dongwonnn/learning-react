@@ -36,7 +36,7 @@
 
 # immer-tutorial
 
-## [Chapter_12_immer를\_사용해서\_더\_쉽게\_불변성\_유지하기](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2012)
+## ✔ [Chapter_12_immer를\_사용해서\_더\_쉽게\_불변성\_유지하기](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2012)
 
 # Settings
 
