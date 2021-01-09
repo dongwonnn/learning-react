@@ -40,7 +40,9 @@
 
 # router-tutorial
 
-## ✔ [Chapter*13*리액트\_라우터로\_SPA\_개발하기(https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2013)
+## [Chapter*13*리액트\_라우터로\_SPA\_개발하기(https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2013)
+
+## [Chapter*14*외부\_API\_연동하여\_뉴스\_뷰어\_만들기(https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2013)
 
 # Settings
 

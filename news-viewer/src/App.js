@@ -4,10 +4,14 @@ import NewsPage from './pages/NewsPage';
 
 // api key 받아오기 : 'https://newsapi.org/register'에서 가입
 const App = () => {
+  
   return <Route path="/:category?" component={NewsPage} />;
 };
 
 export default App;
+// const [category, setCategory] = useState('all');
+// const onSelect = useCallback((category) => setCategory(category), []);
+
 // <div>
 //   <Categories category={category} onSelect={onSelect} />
 //   <NewsList category={category} />
