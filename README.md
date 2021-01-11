@@ -44,6 +44,6 @@
 
 ## [Chapter*14*외부\_API\_연동하여\_뉴스\_뷰어\_만들기(https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2013)
 
-# Settings
+# Settings.
 
 ## [React setting](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Setting)
