@@ -4,7 +4,7 @@
 
 # hello-react
 
-## ✔ [Chapter_01\_리액트\_시작](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2001)
+## ✔ [Chapter_01\_리액트\_시작](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2001.md)
 
 ## ✔ [Chapter_02_JSX](https://github.com/dongwonnn/learning-react/tree/main/Chapters/Chapter%2002)
 
