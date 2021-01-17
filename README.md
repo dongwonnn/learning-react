@@ -48,6 +48,6 @@
 
 ## [Chapter_16\_리덕스\_라이브러리\_이해하기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2016.md)
 
-# Settings...
+# Settings....
 
 ## [React setting](https://github.com/dongwonnn/learning-react/blob/main/summaries/Settings.md)
