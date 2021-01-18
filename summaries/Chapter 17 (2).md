@@ -6,8 +6,8 @@
 
 ## 1. redux-actions
 
-- 액션 생성 함수를 더 짧게 작성할 수 있다.
-- switch/case 문이 아닌 handleActions 함수 사용 가능
+- 액션 생성 함수를 더 **짧게** 작성할 수 있다.
+- switch/case 문이 아닌 **handleActions 함수** 사용 가능
 
 ## 2. Counter 모듈에 작성하기
 
@@ -28,7 +28,7 @@ const counter = handleActions(
 );
 ```
 
-- 첫 번째 인자로 업데이트 함수, 두 번째 함수로 초기 상태 설정
+- **첫 번째 인자로 업데이트 함수, 두 번째 함수로 초기 상태 설정**
 
 ## 3. Todo 모듈에 작성하기
 
@@ -40,17 +40,17 @@ const counter = handleActions(
 
   let id = 3;
   export const insert = createAction(INSERT, (text) => ({
-  id: id++,
-  text,
-  done: false,
+    id: id++,
+    text,
+    done: false,
   }));
 
   export const toggle = createAction(TOGGLE, (id) => id);
   export const remove = createAction(REMOVE, (id) => id);
   ```
 
-  - 파라미터가 있는 경우 payload라는 이름을 사용
-  - createAction의 두 번째 함수에 payload를 정의하는 함수를 따로 선언
+  - 파라미터가 있는 경우 **payload**라는 이름을 사용
+  - createAction의 **두 번째 함수에 payload를 정의**하는 함수를 따로 선언
 
   ```
   // handleActions 를 이용한 리듀서 작성
@@ -79,8 +79,8 @@ const counter = handleActions(
   );
   ```
 
-  - createAction으로 만든 액션 생성 함수는 파라미터로 받아 온 값을 action.payload라는 이름으로 공통으로 넣게 된다.
-  - 따라서 기존의 업데이트 로직에서도 action.payload 값을 조회하여 업데이트
+  - createAction으로 만든 액션 생성 함수는 파라미터로 받아 온 값을 **action.payload라는 이름으로 공통**으로 넣게 된다.
+  - 따라서 기존의 업데이트 로직에서도 **action.payload 값을 조회**하여 업데이트
 
     ```
     const todos = handleActions(
@@ -145,7 +145,7 @@ const counter = handleActions(
 
 # 🎯 Hooks 사용하여 컨테이터 컴포넌트 만들기
 
-- connect 함수 사용하는 대신 react-redux에서 제공하는 Hooks 사용
+- **connect 함수 사용하는 대신** react-redux에서 제공하는 Hooks 사용
 
 ## 1. useSelector로 상태 조회하기
 
@@ -157,14 +157,14 @@ const counter = handleActions(
     return <Counter number={number} />;
   };
   ```
-  - mapStateToProps와 같은 역할. 상태만 조회 가능하다.
+  - **mapStateToProps와 같은 역할**. 상태만 조회 가능하다.
 
 ## 2. useDispatch를 사용하여 액션 디스패치하기
 
-- 컴포넌트 내부에서 스토어의 내장 함수 dispatch를 사용할 수 있게 해준다.
+- 컴포넌트 내부에서 스토어의 **내장 함수 dispatch**를 사용할 수 있게 해준다.
 
-  > const dispatch = useDispatch();
-  > dispatch({type: 'SAMPLE_ACTION'})
+  - const dispatch = useDispatch();
+  - dispatch({type: 'SAMPLE_ACTION'})
 
   ```
   const dispatch = useDispatch();
