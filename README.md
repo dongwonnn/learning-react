@@ -46,7 +46,7 @@
 
 ## [Chapter_15_Context_API](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2015.md)
 
-## [Chapter_16\_리덕스\_라이브러리\_이해하기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2016.md)
+## ✔ [Chapter_16\_리덕스\_라이브러리\_이해하기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2016.md)
 
 ## ✔ [Chapter_17\_리덕스를\_사용하여\_리액트\_애플리케이션\_상태\_관리하기(1)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2017%20(1).md>)
 
