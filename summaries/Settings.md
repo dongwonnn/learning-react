@@ -87,3 +87,7 @@
 ## immer 라이브러리
 
 - 설치 : yarn add immer
+
+## 리덕스, react-redux, redux-actions 라이브러리 설치
+
+- 설치 : yarn add redux react-redux redux-actions
