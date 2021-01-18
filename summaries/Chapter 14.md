@@ -162,17 +162,204 @@ const onClick = async () => {
 # 🎯 newsapi API 키 발급받기
 
 - newsapi에서 제공하는 API를 사용하기 위해 키 발급
+
   - https://newsapi.org/register
   - 발급받은 API 키는 API를 요청할 때 쿼리 파라미터로 넣어서 사용하면 된다.
   - 사용할 API : https://newspai.org/s/south-korea-news-api
   - 전체 뉴스(all)과 특정 카테고리 뉴스 2가지 사용
 
+- 클릭하면 row 데이터 생성하는 코드
+
+```
+  const onClick = async () => {
+    try {
+      const response = await axios.get(
+        `http://newsapi.org/v2/top-headlines?country=kr&apiKey=74e7b5b66333419989303e6f693d732e`,
+      );
+      setData(response.data);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+```
+
 # 🎯 뉴스 뷰어 UI 만들기
+
+- yarn add styled-components
+
+## 1.NewsItem 만들기
+
+- api를 통해 가져온 데이터 article 객체는 안에 titie, description, url, urlToImage 가지고 있음.
+
+## 2. NewsList 만들기
+
+- NewsItem에 넘겨줄 props 설정 (title, description, url, urlToImage)
+
+  ```
+  const sampleArticle = {
+  title: '제목',
+  description: '내용',
+  url: 'https://google.com',
+  urlToImage: 'https://via.placeholder.com/160',
+  };
+
+  const NewsList = () => {
+  return (
+      <div>
+      <NewsItem article={sampleArticle} />
+      </div>
+  )
+  ```
 
 # 🎯 데이터 연동하기
 
+- 화면에 처음 보이는 시점에 API 요청-> [useEffect](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2008%20(2).md>) 사용
+- useEffet는 뒷정리 함수를 반환하기 때문에 async를 붙여선 안된다.
+- 따라서 쓰고 싶다면 함수 내부에 async 키워드가 붙은 또 다른 함수를 만들어서 사용해야 한다.
+
+  ```
+  useEffect(() => {
+      const fetchData = async () => {
+      setLoading(true);
+      try {
+          const response = await axios.get(
+          `http://newsapi.org/v2/top-headlines?country=kr&apiKey=74e7b5b66333419989303e6f693d732e`,
+          );
+          setArticles(response.data.articles);
+      } catch (e) {
+          console.log(e);
+      }
+      setLoading(false);
+      };
+      fetchData();
+  }, []);
+
+  if (loading) {
+      return <div>대기 중...</div>;
+  }
+
+  if (!articles) {
+      return null;
+  }
+  ```
+
+  - map 함수를 사용하기전 articles가 있는지 확인해야한다. 없다면 흰 화면만 나오게 된다.
+
 # 🎯 카테고리 기능 구현하기
+
+## 1. 카테고리 선택 UI 만들기
+
+- business, entertainment, health, science, sports, technology 6가지 카테고리
+- categories.js 설정.
+
+  ```
+  const categories = [
+      {
+          name: all,
+          text: '전체보기'
+      }
+      ...
+  ]
+
+  return (
+      <CategoriesBlock>
+        {categories.map(c => (
+            <Category
+             key={c.name}
+             active={category === c.name}
+             onClick={()=> onSelect(c.name)}
+            >{c.text}</Category>
+        ))}
+      </CategoriesBlock>
+  )
+  ```
+
+- App.js
+
+```
+const [category, setCategory] = useState('all')
+const onSelect = useCallback(category => setCategory(category), []);
+
+return(
+    <>
+        <Categories category={category} onSelect={onSelect}>
+    <>
+)
+```
+
+## 2. 카테고리 지정하기
+
+- NewsList.js
+
+  ```
+  const NewsList = ( {category} ) => {
+
+  useEffect(() => {
+  const fetchData = async () => {
+  setLoading(true);
+      try {
+          const query = category === 'all' ? '' : `&category=${category}`
+          const response = await axios.get(
+          `http://newsapi.org/v2/top-headlines?country=kr${query}&apiKey=74e7b5b66333419989303e6f693d732e`,
+      );
+          setArticles(response.data.articles);
+      } catch (e) {
+          console.log(e);
+      }
+  setLoading(false);
+  };
+  fetchData();
+  }, [category]);
+  }
+  ```
+
+  - query 변수를 통해 카테고리 별 API 호출
+  - useEffect의 두 번째 파라미터에 category 설정
 
 # 🎯 리액트 라우터 적용하기
 
+- yarn add react-router-dom, index.js에서 컴포넌트 설정
+
+## 1. NewsPage 설정
+
+- 단 하나의 페이지 사용
+- pages/NewsPage.js
+
+  ```
+  const NewsPage = ( {match} ) => {
+      const category = match.params.category || 'all';
+
+      return (
+          <Category />
+          <NewsList category={category}>
+      )
+  }
+  ```
+
+- App.js
+
+  ```
+  const App = () => {
+      return <Route path="/:category?" component={NewsPage}>
+  }
+  ```
+
+  - /:category? 의 ?는 있을 수도 있고 없을 수도 있다는 뜻. 없다면 all.
+
+## 2. NavLink 사용하기
+
+- 선택된 카테고리에 다른 스타일을 주는 기능
+
+```
+<CategoriesBlock
+    key = {c.name}
+    activeClassName="active"
+    exact={c.name==='all'}
+    to={c.name === 'all' ? '/' : `/${c.name}`}
+/>
+```
+
 # 🎯 usePromise 커스텀 Hook 만들기
+
+- API 호출처럼 Promise를 사용해야 하는 경우 간결하게 코드를 작성 할 수 있도록 해 주는 커스텀 Hook
+- src/lib/usePromise.js
