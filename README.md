@@ -42,15 +42,27 @@
 
 ## ✔ [Chapter_13\_리액트\_라우터로\_SPA\_개발하기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2013.md)
 
+# spa-using-news_api
+
 ## ✔ [Chapter_14\_외부\_API\_연동하여\_뉴스\_뷰어\_만들기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2014.md)
+
+# context-tutorial
 
 ## [Chapter_15_Context_API](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2015.md)
 
+# vanilla-redux
+
 ## ✔ [Chapter_16\_리덕스\_라이브러리\_이해하기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2016.md)
+
+# react-redux-tutorial
 
 ## ✔ [Chapter_17\_리덕스를\_사용하여\_리액트\_애플리케이션\_상태\_관리하기(1)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2017%20(1).md>)
 
 ## ✔ [Chapter_17\_리덕스를\_사용하여\_리액트\_애플리케이션\_상태\_관리하기(2)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2017%20(2).md>)
+
+# learn-redux-middleware
+
+## [Chapter_18\_리덕스\_미들웨어를\_통한\_비동기\_작업\_관리](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2018.md)
 
 # Settings....
 
