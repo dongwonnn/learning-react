@@ -91,3 +91,8 @@
 ## 리덕스, react-redux, redux-actions 라이브러리 설치
 
 - 설치 : yarn add redux react-redux redux-actions
+
+## Loadable Components를 통한 코드 스플리팅
+
+- Loadable Components : 코드 스플리팅을 편하게 하도록 도와주는 서드 파티 라이브러리
+  - yarn add @loadable/component

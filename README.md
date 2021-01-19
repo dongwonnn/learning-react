@@ -64,6 +64,10 @@
 
 ## [Chapter_18\_리덕스\_미들웨어를\_통한\_비동기\_작업\_관리](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2018.md)
 
+# spliting-sample
+
+## ✔ [Chapter_19\_코드\_스플리팅](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2019.md)
+
 # Settings....
 
 ## [React setting](https://github.com/dongwonnn/learning-react/blob/main/summaries/Settings.md)
