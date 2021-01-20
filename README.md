@@ -68,6 +68,10 @@
 
 ## ✔ [Chapter_19\_코드\_스플리팅](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2019.md)
 
+# ssr-recipe
+
+## [Chapter_20\_서버\_사이드\_렌더링](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2020.md)
+
 # Settings....
 
 ## [React setting](https://github.com/dongwonnn/learning-react/blob/main/summaries/Settings.md)
