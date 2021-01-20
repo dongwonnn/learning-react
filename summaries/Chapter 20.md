@@ -42,3 +42,13 @@
 
 - 구현하기 위해 웹팩 설정을 커스터마이징해 주어야 한다.
 - yarn eject를 통해 밖으로 꺼내기. (하기 전 git Commit)
+
+- 오류
+
+  ```
+  ERROR in ./src/index.server.js
+  Module build failed (from ./node_modules/babel-loader/lib/index.js):
+  ```
+
+  - babel과 babel-loader 간 호환성 문제.
+  - npm install -D babel-loader @babel/core @babel/preset-env webpack
