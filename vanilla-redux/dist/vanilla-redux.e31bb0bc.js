@@ -866,13 +866,17 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var divToggle = document.querySelector(".toggle");
-var counter = document.querySelector("h1");
-var btnIncrease = document.querySelector("#increase");
-var btnDecrease = document.querySelector("#decrease");
-var TOGGLE_SWITCH = "TOGGLE_SWITCH";
-var INCREASE = "INCREASE";
-var DECREASE = "DECREASE";
+var divToggle = document.querySelector('.toggle');
+var counter = document.querySelector('h1');
+var btnIncrease = document.querySelector('#increase');
+var btnDecrease = document.querySelector('#decrease'); // 1. 액션 이름 정의
+
+var TOGGLE_SWITCH = 'TOGGLE_SWITCH';
+var INCREASE = 'INCREASE';
+var DECREASE = 'DECREASE'; // const TOGGLE_SWITCH = 'TOGGLE_SWITCH';
+// const INCREASE = 'INCREASE';
+// const DECREASE = 'DECREASE';
+// 2. 액션 객체 생성 함수 생성
 
 var toggleSwitch = function toggleSwitch() {
   return {
@@ -891,12 +895,20 @@ var decrease = function decrease() {
   return {
     type: DECREASE
   };
-};
+}; // const toggleSwitch = () => ({ type: TOGGLE_SWITCH });
+// const increase = (difference) => ({ type: INCREASE, difference });
+// const decrease = () => ({ type: DECREASE });
+// 3. 초기값 생성
+
 
 var initialState = {
   toggle: false,
   counter: 0
-};
+}; // const initialState = {
+//   toggle: false,
+//   counter: 0,
+// };
+// 4. 리듀서 생성
 
 function reducer() {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
@@ -921,25 +933,60 @@ function reducer() {
     default:
       return state;
   }
-}
+} // function reducer(state = initialState, action) {
+//   switch (action.type) {
+//     case TOGGLE_SWITCH:
+//       return {
+//         ...state,
+//         toggle: !state.toggle,
+//       };
+//     case INCREASE:
+//       return {
+//         ...state,
+//         counter: state.counter + action.difference,
+//       };
+//     case DECREASE:
+//       return {
+//         ...state,
+//         counter: state.counter - 1,
+//       };
+//     default:
+//       return state;
+//   }
+// }
+// 5. 스토어 생성
 
-var store = (0, _redux.createStore)(reducer);
+
+var store = (0, _redux.createStore)(reducer); //const store = createStore(reducer);
+// 6. 렌더 함수 생성
 
 var render = function render() {
   var state = store.getState();
 
   if (state.toggle) {
-    divToggle.classList.add("active");
+    divToggle.classList.add('active');
   } else {
-    divToggle.classList.remove("active");
-  } // 카운터 처리
-
+    divToggle.classList.remove('active');
+  }
 
   counter.innerText = state.counter;
 };
 
-render();
-store.subscribe(render);
+render(); // const render = () => {
+//   const state = store.getState();
+//   if (state.toggle) {
+//     divToggle.classList.add('active');
+//   } else {
+//     divToggle.classList.remove('active');
+//   }
+//   // 카운터 처리
+//   counter.innerText = state.counter;
+// };
+// render();
+// // 7. 구독하기
+
+store.subscribe(render); // store.subscribe(render);
+// // 8. 액션 발생
 
 divToggle.onclick = function () {
   store.dispatch(toggleSwitch());
@@ -951,7 +998,15 @@ btnIncrease.onclick = function () {
 
 btnDecrease.onclick = function () {
   store.dispatch(decrease());
-};
+}; // divToggle.onclick = () => {
+//   store.dispatch(toggleSwitch());
+// };
+// btnIncrease.onclick = () => {
+//   store.dispatch(increase(1));
+// };
+// btnDecrease.onclick = () => {
+//   store.dispatch(decrease());
+// };
 },{"redux":"node_modules/redux/es/redux.js"}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -980,7 +1035,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "13121" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "10264" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
