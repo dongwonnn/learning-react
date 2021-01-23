@@ -52,15 +52,20 @@ export default TodoContainer;
 //   );
 // };
 
-// export default connect(
-//   ({ todos }) => ({
-//     input: todos.input,
-//     todos: todos.todos,
-//   }),
-//   {
-//     changeInput,
-//     insert,
-//     toggle,
-//     remove,
-//   },
-// )(TodosContainer);
+export default connect(
+  // const { todo } = state;
+  ({ todos }) => ({
+    input: todos.input,
+    todos: todos.todos,
+  }),
+  // (state) => ({
+  //   input: state.todos.input,
+  //   todos: state.todos.todos,
+  // }),
+  {
+    changeInput,
+    insert,
+    toggle,
+    remove,
+  },
+)(TodosContainer);
