@@ -60,6 +60,8 @@
 
 ## ✔ [Chapter_17\_리덕스를\_사용하여\_리액트\_애플리케이션\_상태\_관리하기(2)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2017%20(2).md>)
 
+## ✔ [Chapter_17\_리덕스를\_사용하여\_리액트\_애플리케이션\_상태\_관리하기(3)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2017%20(3).md>)
+
 # learn-redux-middleware
 
 ## [Chapter_18\_리덕스\_미들웨어를\_통한\_비동기\_작업\_관리](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2018.md)
