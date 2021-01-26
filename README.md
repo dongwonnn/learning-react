@@ -48,7 +48,7 @@
 
 # context-tutorial
 
-## [Chapter_15_Context_API](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2015.md)
+## ✔ [Chapter_15_Context_API](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2015.md)
 
 # vanilla-redux
 
