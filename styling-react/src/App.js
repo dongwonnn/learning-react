@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import StyleComponent from './StyleComponent';
+import SassComponent from './SassComponent';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <StyleComponent />
+        <SassComponent />
       </div>
     );
   }

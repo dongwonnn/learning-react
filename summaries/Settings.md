@@ -96,3 +96,8 @@
 
 - Loadable Components : 코드 스플리팅을 편하게 하도록 도와주는 서드 파티 라이브러리
   - yarn add @loadable/component
+
+## Chpater 17. 리덕스를 사용하여 리액트 애플리케이션 상태 관리하기
+
+- 설치 : yarn add redux react-redux
+- Redux DevTools 설치 : yarn add redux-devtools-extension
