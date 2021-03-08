@@ -101,3 +101,4 @@
 
 - 설치 : yarn add redux react-redux
 - Redux DevTools 설치 : yarn add redux-devtools-extension
+- 액션 생성 함수 더 짧게 : yarn add redux-actions
