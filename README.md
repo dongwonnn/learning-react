@@ -2,78 +2,32 @@
 
 - 리액트를 다루는 기술 이해한 대로 정리한 repository
 
-# hello-react
+| 목차                                                          |    Link     |
+| :------------------------------------------------------------ | :---------: |
+| 01장. 리액트 시작                                             | [🔗 LINK]() |
+| 02장. JSX                                                     | [🔗 LINK]() |
+| 03장. 컴포넌트                                                | [🔗 LINK]() |
+| 04장. 이벤트 핸들링                                           | [🔗 LINK]() |
+| 05장. ref: DOM에 이름 달기                                    | [🔗 LINK]() |
+| 06장. 컴포넌트 반복                                           | [🔗 LINK]() |
+| 07장. 컴포넌트의 라이프사이클 메서드                          | [🔗 LINK]() |
+| 08장. Hooks(1)                                                | [🔗 LINK]() |
+| 08장. Hooks(2)                                                | [🔗 LINK]() |
+| 09장. 컴포넌트 스타일링                                       | [🔗 LINK]() |
+| 10장. 일정 관리 웹 어플리케이션 만들기                        | [🔗 LINK]() |
+| 11장. 컴포넌트 성능 최적화                                    | [🔗 LINK]() |
+| 12장. immer를 사용해서 더 쉽게 불변성 유지하기                | [🔗 LINK]() |
+| 13장. 리액트 라우터로 SPA 개발하기                            | [🔗 LINK]() |
+| 14장. 외부 API 연동하여 뉴스 뷰어 만들기                      | [🔗 LINK]() |
+| 15장. Context API                                             | [🔗 LINK]() |
+| 16장. 리덕스 라이브러리 이해하기                              | [🔗 LINK]() |
+| 17장. 리덕스를 사용하여 리액트 애플리케이션 상태 관리하기 (1) | [🔗 LINK]() |
+| 17장. 리덕스를 사용하여 리액트 애플리케이션 상태 관리하기 (2) | [🔗 LINK]() |
+| 17장. 리덕스를 사용하여 리액트 애플리케이션 상태 관리하기 (3) | [🔗 LINK]() |
+| 18장. 리덕스 미들웨어를 통한 비동기 작업 관리                 | [🔗 LINK]() |
+| 19장. 코드 스플리팅                                           | [🔗 LINK]() |
+| 20장. 서버 사이드 렌더링                                      | [🔗 LINK]() |
 
-## ✔ [Chapter_01\_리액트\_시작](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2001.md)
+### Settings....
 
-## ✔ [Chapter_02_JSX](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2002.md)
-
-## ✔ [Chapter_03\_컴포넌트](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2003.md)
-
-## ✔ [Chapter_04\_이벤트\_핸들링](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2004.md)
-
-## ✔ [Chapter_05_ref:\_DOM에\_이름\_달기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2005.md)
-
-## ✔ [Chapter_06\_컴포넌트\_반복](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2006.md)
-
-## ✔ [Chapter_07\_컴포넌트의\_라이프사이클\_메서드](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2007.md)
-
-# hooks-tutorial
-
-## ✔ [Chapter_08_Hooks\_(1)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2008%20(1).md>)
-
-## ✔ [Chapter_08_Hooks\_(2)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2008%20(2).md>)
-
-# styling-react
-
-## ✔ [Chapter_09\_컴포넌트\_스타일링](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2009.md)
-
-# todo-app
-
-## ✔ [Chapter_10\_일정\_관리\_웹\_어플리케이션\_만들기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2010.md)
-
-## ✔ [Chapter_11\_컴포넌트\_성능\_최적화](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2011.md)
-
-# immer-tutorial
-
-## ✔ [Chapter_12_immer를\_사용해서\_더\_쉽게\_불변성\_유지하기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2012.md)
-
-# router-tutorial
-
-## ✔ [Chapter_13\_리액트\_라우터로\_SPA\_개발하기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2013.md)
-
-# spa-using-news_api
-
-## ✔ [Chapter_14\_외부\_API\_연동하여\_뉴스\_뷰어\_만들기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2014.md)
-
-# context-tutorial
-
-## ✔ [Chapter_15_Context_API](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2015.md)
-
-# vanilla-redux
-
-## ✔ [Chapter_16\_리덕스\_라이브러리\_이해하기](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2016.md)
-
-# react-redux-tutorial
-
-## ✔ [Chapter_17\_리덕스를\_사용하여\_리액트\_애플리케이션\_상태\_관리하기(1)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2017%20(1).md>)
-
-## ✔ [Chapter_17\_리덕스를\_사용하여\_리액트\_애플리케이션\_상태\_관리하기(2)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2017%20(2).md>)
-
-## ✔ [Chapter_17\_리덕스를\_사용하여\_리액트\_애플리케이션\_상태\_관리하기(3)](<https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2017%20(3).md>)
-
-# learn-redux-middleware
-
-## [Chapter_18\_리덕스\_미들웨어를\_통한\_비동기\_작업\_관리](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2018.md)
-
-# spliting-sample
-
-## ✔ [Chapter_19\_코드\_스플리팅](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2019.md)
-
-# ssr-recipe
-
-## [Chapter_20\_서버\_사이드\_렌더링](https://github.com/dongwonnn/learning-react/blob/main/summaries/Chapter%2020.md)
-
-# Settings....
-
-## [React setting](https://github.com/dongwonnn/learning-react/blob/main/summaries/Settings.md)
+#### [React setting](https://github.com/dongwonnn/learning-react/blob/main/summaries/Settings.md)
